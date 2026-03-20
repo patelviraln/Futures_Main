@@ -1,0 +1,34 @@
+# Futures_Main Configuration
+
+# Data paths
+data_dir: "data"
+output_dir: "."
+
+# Rolling average periods (Fibonacci sequence)
+rolling_periods:
+  - 3
+  - 5
+  - 8
+  - 13
+
+# Participant types
+participant_types:
+  - "Client"
+  - "DII"
+  - "FII"
+  - "Pro"
+
+# Date format in filenames
+date_format_in_filename: "%d%m%Y"
+
+# Telegram Alerts (set enabled: true and fill in credentials to activate)
+alerts:
+  enabled: false
+  telegram:
+    bot_token: ""
+    chat_id: ""
+
+# Dashboard settings
+dashboard:
+  page_title: "Futures Main - Market Analysis"
+  page_icon: "📊"
